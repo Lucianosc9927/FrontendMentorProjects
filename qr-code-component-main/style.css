@@ -1,0 +1,72 @@
+/* custom propertys */
+:root {
+    /* colors */
+    --clr-bgc-100: hsl(0, 0%, 100%);
+    --clr-bgc-400: hsl(212, 45%, 89%);
+    --clr-p-200: hsl(220, 15%, 55%);
+    --clr-title-900: hsl(218, 44%, 22%);
+
+    /* font */
+    --ff-primary: 'Outfit', sans-serif;
+    --fw-regular: 400;
+    --fw--bold: 700;
+}
+
+/* css reset */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* general styling */
+body {
+    font-size: 16px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-bgc-400);
+}
+p {
+    font-size: 1.5rem;
+}
+img {
+    max-width: 100%;
+}
+h1,
+p {
+    text-align: center;
+    font-family: var(--ff-primary);
+}
+
+
+/* card */
+.card {
+    width: min(95%,32rem);
+    background-color: var(--clr-bgc-100);
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+.card__image {
+    padding: 1.5rem;
+    border-radius: 8.5%;
+}
+.card__content {
+    width: 80%;
+    margin: 0 auto;
+}
+.card__title {
+    font-size: 2.2rem;
+    color: var(--clr-title-900);
+    line-height: 3rem;
+    margin-top: .5rem;
+}
+.card__text {
+    color: var(--clr-p-200);
+    font-weight: var(--fw-regular);
+    margin-bottom: 4.5rem;
+
+}
