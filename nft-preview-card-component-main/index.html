@@ -11,49 +11,42 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
-  <!-- css reset -->
+  <!-- css reset  -->
   <link rel="stylesheet" href="normalize.css">
   <!-- my css -->
   <link rel="stylesheet" href="style.css">
- 
 </head>
 <body>
-
-
-    <div class="nft">
-      <div class="image">
-        <img src="images/image-equilibrium.jpg" alt="nft preview" >
-        <div class="img-top">
-          <img src="images/icon-view.svg" alt="icon view">
-        </div>
+  <div class="nft">
+    <div class="img">
+      <img src="images/image-equilibrium.jpg" alt="ETH preview" class="nft__img">
+      <div class="img__overlay">
+        <img src="images/icon-view.svg" alt="Eye">
       </div>
-      <div class="nft__content">
-        <h1 class="nft__title">Equilibrium #3429</h1>
-        <p class="nft__text">Our Equilibrium collection promotes balance and calm.</p>
-        <div class="nft__data">
-          <p class="nft__data__price" data-icon="eth-icon">
-            0.041 ETH
-          </p>
-          <p class="nft__data__time-left" data-icon="clock-icon">
-            3 days left
-          </p>
-        </div>
-        <div class="line"></div>
-          <div class="author">
-            <img src="images/image-avatar.png" alt="Nft autor photo" class="author__avatar">
-            <p class="author__create">Creation of <span class="author__name">Jules Wyvern</span></p>
-          </div>
-      </div>
-        
-        
     </div>
-
-
-
-
-
-
-
+    <div class="nft__content">
+      <h1 class="nft__title">Equilibrium #3429</h1>
+      <p class="nft__info">
+        Our Equilibrium collection promotes balance and calm.
+      </p>
+      <div class="nft__plan">
+        <p class="nft__plan__value icono" data-icon="icon-eth">
+          0.041 ETH
+        </p>
+        <p class="nft__plan__time-left" data-icon="icon-time">
+          3 days left
+        </p>
+      </div>
+      <div class="line"></div>
+      <div class="author">
+        <img src="images/image-avatar.png" alt="author avatar" class="author__avatar">
+        <p class="author__desc">
+          Creation of
+          <span class="author__desc--name">Jules Wyvern</span>
+        </p>
+      </div>
+    </div>
+  </div>
 
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
