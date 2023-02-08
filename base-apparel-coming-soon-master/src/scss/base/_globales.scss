@@ -1,0 +1,34 @@
+@use "variables" as v;
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 1.6rem;
+    font-family: v.$ff-primary;
+    background: linear-gradient(v.$lg-bg);
+}
+p {
+    font-size: 1.6rem;
+}
+img {
+    max-width: 100%;
+}
+.contenedor {
+    width: min(90%,120rem);
+    margin: 0 auto;
+}
+h1 {
+    font-size: 4rem;
+}
+button {
+    border: none;
+    cursor: pointer;
+}
+input:focus {
+    outline: none;
+}

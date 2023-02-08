@@ -1,0 +1,14 @@
+.hero {
+    background-image: url("/images/hero-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 25rem;
+}
+@media (min-width: 375px) {
+    .hero {
+        background-image: url("/images/hero-desktop.jpg");
+        background-size: cover;
+        height: 100%;
+        max-width: 45rem;
+    }
+}
