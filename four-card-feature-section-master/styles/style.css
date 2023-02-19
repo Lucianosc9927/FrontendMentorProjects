@@ -1,0 +1,109 @@
+/* custom properties */
+:root {
+    /* bordes */
+    --clr-brd-red: hsl(0, 78%, 62%);
+    --clr-brd-cyan:hsl(180, 62%, 55%);
+    --clr-brd-orange: hsl(34, 97%, 64%);
+    --clr-brd-blue: hsl(212, 86%, 64%);
+    --clr-very-dark-blue: hsl(234, 12%, 34%);
+    --clr-grayish-blue: hsl(229, 6%, 66%);
+    --clr-bg-primary: hsl(0, 0%, 98%);
+
+    /* font font-family */
+    --ff-primary: 'Poppins', sans-serif; 
+    /* font weight */
+    --fw-light: 200;
+    --fw-regular: 400;
+    --fw-bold: 600;
+}
+/* globales */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 1.6rem;
+    font-family: var(--ff-primary);
+    background-color: var(--clr-bg-primary);
+}
+img {
+    width: 100%;
+    display: block;
+}
+p {
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+    color: var(--clr-grayish-blue);
+}
+h2 {
+    margin: 0;
+}
+.contenedor {
+    width: min(90%,120rem);
+    margin: 0 auto;
+}
+.article {
+    text-align: center;
+}
+.article-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (min-width: 768px) {
+    .article-contenedor {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        align-items: center;
+    }
+}
+
+/* titulo */
+.title {
+    font-size: 2.5rem;
+    font-weight: var(--fw-light);
+}
+.bold {
+    font-weight: var(--fw-bold);
+    display: block;
+}
+.text {
+    font-weight: var(--fw-regular);
+    font-size: 1.4rem;
+}
+.box {
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 5px var(--clr-grayish-blue);
+    margin: 2rem;    
+}
+.box img {
+    width: 50px;
+    align-self: end;
+}
+.supervisor {
+    border-top: 4px solid var(--clr-brd-cyan);
+    grid-row: 1/4;
+    height: 50%;
+}
+.team-builder {
+    border-top: 4px solid var(--clr-brd-red);
+}
+.karma {
+    border-top: 4px solid var(--clr-brd-orange);
+    grid-column: 2/3;
+}
+.calculator {
+    border-top: 4px solid var(--clr-brd-blue);
+    grid-row: 1/4;
+    grid-column: 3/4;
+    height: 50%;
+}
