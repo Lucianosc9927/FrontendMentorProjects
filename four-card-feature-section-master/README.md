@@ -1,1 +1,3 @@
-<a href="https://sweet-gecko-c5affe.netlify.app/"> Ver Sitio </a>
+# Frontend Mentor - Four card feature section
+
+![Design preview for the Four card feature section coding challenge](./design/desktop-preview.jpg)
