@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+.main {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+.card {
+  width: 100%;
+  max-width: 800px;
+  min-width: 350px;
+}
+.result__section {
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  text-align: center;
+  padding: 2rem 0;
+  border-radius: 0 0 25px 25px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+.result__title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: hsl(221, 100%, 96%);
+}
+.circle {
+  background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  display: grid;
+  place-items: center;
+  width: 160px;
+  height: 160px;
+  border-radius: 100%;
+  margin: 0 auto;
+}
+.result__score {
+  color: hsl(241, 100%, 89%);
+}
+.result__score--final {
+  display: block;
+  font-size: 4rem;
+  font-weight: bold;
+  color: hsl(0, 0%, 100%);
+}
+.result__info {
+  width: 60%;
+  margin: 0 auto;
+}
+.result__rating {
+  color: hsl(0, 0%, 100%);
+  letter-spacing: .05rem;
+}
+.result__description {
+  color: hsl(221, 100%, 96%);
+  margin-top: 1rem;
+}
+.summary__section {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.summary__title {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+.skill__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.skill {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+}
+.skill__type {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+}
+.skill__point--finals {
+  color: hsl(224, 30%, 27%);
+  font-weight: 800;
+}
+.skill__points {
+  color: hsl(241, 100%, 89%);
+}
+.skill__reaction {
+  background: hsla(0, 100%, 67%, .1);
+  color: hsl(0, 100%, 67%);
+}
+.skill__memory {
+  background: hsla(39, 100%, 56%, .1);
+  color: hsl(39, 100%, 56%);
+}
+.skill__verbal {
+  background: hsla(166, 100%, 37%, .1);
+  color: hsl(166, 100%, 37%);
+}
+.skill__visual {
+  background: hsla(234, 85%, 45%, .1);
+  color: hsl(234, 85%, 45%);
+}
+.btn {
+  border: none;
+  width: 100%;
+  background:  hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+  padding: 1.2rem;
+  font-size: 1.2rem;
+  border-radius: 50px;
+}
+.btn:hover {
+  cursor: pointer;
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+@media (min-width: 650px) {
+  .card {
+    display: flex;
+  }
+  .result__section {
+    border-radius: 25px;
+    width: 50%;
+  }
+  .summary__section {
+    width: 50%;
+  }
+}
